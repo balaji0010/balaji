@@ -1,16 +1,23 @@
 // src/App.js
 
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import IntroVideo from './Introvideo'
 import Header from './Header';
+import IntroVideo from './Introvideo';
+import ContactCard from './ContactCard';
 
 function App() {
+    const [isContactCardVisible, setContactCardVisible] = useState(false);
+
+    const toggleContactCard = () => {
+        setContactCardVisible(!isContactCardVisible);
+    };
+
     return (
         <div className="App">
-            <Header />
+            <Header onContactClick={toggleContactCard} />
             <IntroVideo />
-            {/* Add other components here for resume, projects, skills, contact */}
+            <ContactCard isVisible={isContactCardVisible} onClose={toggleContactCard} />
         </div>
     );
 }
