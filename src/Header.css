@@ -1,0 +1,63 @@
+/* src/Header.css */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: rgba(35, 34, 34, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: gold;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navigation li {
+    position: relative;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    position: relative;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: gold; /* Underline color */
+    transition: width 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #e0e0e0;
+}
+
+.navigation a:hover::after {
+    width: 100%;
+}
