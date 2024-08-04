@@ -6,7 +6,7 @@ import './Header.css';
 const Header = ({ onSkillsClick, onContactClick }) => {
     return (
         <header className="header">
-            <div className="logo">Your Name</div>
+            <div className="logo">BALAJI P</div>   
             <nav className="navigation">
                 <ul>
                     <li><a href="/BALAJI_P_RESUME01.pdf" download="BALAJI_P_RESUME01.pdf">Resume</a></li>

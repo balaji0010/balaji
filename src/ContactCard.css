@@ -22,7 +22,7 @@
 }
 
 .contact-card {
-    background: rgba(255, 255, 255, 0.09); /* Transparent background */
+    background: #ffffff17; /* Transparent background */
     backdrop-filter: blur(15px); /* Strong blur effect */
     border-radius: 15px;
     padding: 30px;
