@@ -5,11 +5,13 @@ import './App.css';
 import Header from './Header';
 import IntroVideo from './Introvideo';
 import ContactCard from './ContactCard';
-import Skills from './Skills'; // Import the Skills component
+import Skills from './Skills';
+import Projects from './Projects'; // Import the Projects component
 
 function App() {
     const [isContactCardVisible, setContactCardVisible] = useState(false);
     const [isSkillsVisible, setSkillsVisible] = useState(false);
+    const [isProjectsVisible, setProjectsVisible] = useState(false);
 
     const toggleContactCard = () => {
         setContactCardVisible(!isContactCardVisible);
@@ -19,11 +21,16 @@ function App() {
         setSkillsVisible(!isSkillsVisible);
     };
 
+    const toggleProjectsVisibility = () => {
+        setProjectsVisible(!isProjectsVisible);
+    };
+
     return (
         <div className="App">
-            <Header onSkillsClick={toggleSkillsVisibility} onContactClick={toggleContactCard} />
+            <Header onSkillsClick={toggleSkillsVisibility} onContactClick={toggleContactCard} onProjectsClick={toggleProjectsVisibility} />
             <IntroVideo />
-            <Skills isVisible={isSkillsVisible} onClose={toggleSkillsVisibility} /> {/* Pass visibility state */}
+            <Skills isVisible={isSkillsVisible} onClose={toggleSkillsVisibility} />
+            <Projects isVisible={isProjectsVisible} onClose={toggleProjectsVisibility} />
             <ContactCard isVisible={isContactCardVisible} onClose={toggleContactCard} />
         </div>
     );

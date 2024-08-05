@@ -21,6 +21,10 @@ const ContactCard = ({ isVisible, onClose }) => {
                         <img src="link.png" alt="LinkedIn" />
                         <a href="https://www.linkedin.com/in/balaji-p0001/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </li>
+                    <li>
+                        <img src="beh.png" alt="Behance" />
+                        <a href="https://www.behance.net/balajip29">Behance</a>
+                    </li>
                 </ul>
                 <button className="close-button" onClick={onClose}>Close</button>
             </div>
