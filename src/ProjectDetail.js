@@ -20,9 +20,9 @@ const ProjectDetail = ({ project, onClose }) => {
                             <h4>Internship</h4>
                             <p>{project.internship}</p>
                         </div>
-                        <div className="project-info-start-date">
-                            <h4>Start Date</h4>
-                            <p>{project.startDate}</p>
+                        <div className="project-info-finished-date">
+                            <h4>Project Finished</h4>
+                            <p>{project.finishedDate}</p>
                         </div>
                         <div className="project-info-designer">
                             <h4>Designer</h4>
