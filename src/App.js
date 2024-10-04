@@ -1,12 +1,10 @@
-// src/App.js
-
 import React, { useState } from 'react';
 import './App.css';
 import Header from './Header';
 import IntroVideo from './Introvideo';
 import ContactCard from './ContactCard';
 import Skills from './Skills';
-import Projects from './Projects'; // Import the Projects component
+import Projects from './Projects'; 
 
 function App() {
     const [isContactCardVisible, setContactCardVisible] = useState(false);
