@@ -7,6 +7,7 @@ const projectsData = [
         id: 1,
         name: 'AUDI Car Website',
         description: '"The Website about the Audi Car website which showcase the cars."',
+        image: 'audi.jpg',
         details: '"The Website about the Audi Car website which showcase the cars."',
         link: 'https://www.behance.net/gallery/204690067/Car-website',
         category: 'UI/UX Designing',
@@ -21,6 +22,7 @@ const projectsData = [
         id: 2,
         name: 'Hotel Booking App',
         description: '"Its an Hotel Booking App which in search Hotel Bookings"',
+        image: 'hotel.jpg',
         details: '"Its an Hotel Booking App which in search Hotel Bookings"',
         link: 'https://www.behance.net/gallery/204470039/Hotel-Booking-APP',
         category: 'UI/UX Designing',
@@ -36,6 +38,7 @@ const projectsData = [
         name: 'E-Commerce ',
         description: '"Landing Page of E-commerce website and Dashboard"',
         details: '"Landing Page of E-commerce website and Dashboard"',
+        image: 'ecom.jpg',
         link: 'https://www.behance.net/gallery/203950993/Ecommerce-Digital-currency',
         category: 'UI /UX Designing',
         internship: 'Selfly',
@@ -50,6 +53,7 @@ const projectsData = [
         name: 'Education Website',
         description: '"Education Website for Govt"',
         details: '"Its a Clone website design of Govt"',
+        image: 'edutech.jpg',
         link: 'https://www.behance.net/gallery/203798429/Education-website',
         category: 'UI/UX Designing',
         internship: 'Selfly',
@@ -64,6 +68,7 @@ const projectsData = [
         name: 'HealthCare UI',
         description: '"Its a UI for HealthCare App"',
         details: 'User Interface for Healthcare',
+        image: 'health.jpg',
         link: 'https://www.behance.net/gallery/201569449/Healthcare-UI-Design',
         category: 'UI/UX Designing',
         internship: 'Selfly',
@@ -78,6 +83,7 @@ const projectsData = [
         name: 'ChatGpt2.o',
         description: 'Re-Design of ChatGpt2.o',
         details: 'Re-Design of ChatGpt2.o',
+        image: 'ai.jpg',
         link: 'https://www.behance.net/gallery/201823891/Chatgpt2o',
         category: 'Web Development',
         internship: 'Selfly',
@@ -106,13 +112,22 @@ const Projects = ({ isVisible, onClose }) => {
             <div className="projects-container" onClick={(e) => e.stopPropagation()}>
                 <h2>My Projects</h2>
                 <div className="projects-grid">
-                    {projectsData.map(project => (
-                        <div key={project.id} className="project-card">
-                            <h3>{project.name}</h3>
-                            <p>{project.description}</p>
-                            <button className="view-button" onClick={() => handleViewClick(project)}>
-                                View
-                            </button>
+                    {projectsData.map((project, index) => (
+                        <div key={project.id} className="flip-card">
+                            <div className="flip-card-inner">
+                                {/* Front Side (Image) */}
+                                <div className="flip-card-front">
+                                    <img src={project.image} alt={project.name} className="project-image" />
+                                </div>
+                                {/* Back Side (Content and Button) */}
+                                <div className="flip-card-back">
+                                    <h3>{project.name}</h3>
+                                    <p>{project.description}</p>
+                                    <button className="view-button" onClick={() => handleViewClick(project)}>
+                                        View
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     ))}
                 </div>

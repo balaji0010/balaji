@@ -26,7 +26,7 @@ const IntroVideo = () => {
             {/* Second Section: Bio Card */}
             <div class="bio-card">
                 <div class ="profile-section">
-                    <img src="link.png" alt ="" class=""></img>   
+                    <img src="person.png" alt ="" class=""></img>   
                     <div class="name-info">
                         <h2>BALAJI PAZHANISAMI</h2>
                         <p class="title">UI/UX DESIGNER | FRONTEND DEVELOPER | 3D ARTIST</p> 
