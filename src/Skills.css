@@ -37,24 +37,32 @@
 }
 
 .skill-card {
-    background: rgba(74, 74, 74, 0.197);
+    background: black;
     backdrop-filter: blur(10px);
     border-radius: 10px;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .skill-card img {
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
-}
+}   
 
 .skill-card h3 {
     margin: 0;
     font-size: 16px;
     color:white;
+}
+
+.skill-card:hover
+{
+    transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
 .close-button {
