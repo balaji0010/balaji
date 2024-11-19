@@ -29,14 +29,15 @@
     max-width: 800px;
     text-align: center;
     color:white;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
 }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 
@@ -89,7 +90,7 @@
 
 /* Front: Image */
 .flip-card-front {
-    background-color: #333;
+    background-color: #cccccc;
 }
 
 .project-image {
@@ -101,7 +102,8 @@
 
 /* Back: Content */
 .flip-card-back {
-    background-color: #333;
+    background-color: #0303036b;
+    backdrop-filter: blur(5px);
     color: white;
     display: flex;
     flex-direction: column;
