@@ -1,22 +1,33 @@
-import React from "react";
-import "./Portfolio.scss";
-import Navbar from "./components/Navbar";
-import Toggle from "./components/Toggle";
-import Projects from "./components/Projects";
-import Footer from "./components/Footer";
+import logo from './logo.svg';
+import React, { useState } from "react";
+import './App.css';
+import Navbar from './Component/Navbar';
+import Toggle from './Component/Toggle';
 
-const Portfolio = () => {
+
+const App= () =>  {
+
+  const [activeSection, setActiveSection] = useState("work");
+
   return (
-    <div className="portfolio">
-      <Navbar />
-      <Toggle />
-      <section className="hero">
-        <div className="highlighted-project"></div>
-      </section>
-      <Projects />
-      <Footer />
+    <div className="App">
+      <Navbar/>
+      <Toggle setActiveSection={setActiveSection} />
+
+      {activeSection === "work" ? (
+        <section className="hero">
+          <div className="highlighted-project"></div>
+        <Navbar/>
+        </section>
+      ) : (
+        <section className="info">
+          
+          <h2>About Me</h2>
+          <p>Hi, I'm Balaji P, a UI/UX Designer and Frontend Developer...</p>
+        </section>
+      )}
     </div>
   );
-};
+}
 
-export default Portfolio;
+export default App;
