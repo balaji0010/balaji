@@ -10,9 +10,9 @@ const Navbar = () => {
         <span>UI/UX Designer | Frontend Developer</span>
       </div>
       <div className="links">
-        <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">Github</a>
-        <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="/resume.pdf" download>Resume</a>
+        <a href= "https://github.com/balaji0010" target="_blank" rel="noopener noreferrer">Github</a>
+        <a href="https://www.linkedin.com/in/balaji-p0001/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="BALAJI_P_RESUME01.pdf" download="BALAJI_P_RESUME01.pdf">Resume</a>
       </div>
     </nav>
   );

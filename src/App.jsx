@@ -1,8 +1,11 @@
-import logo from './logo.svg';
 import React, { useState } from "react";
 import './App.css';
-import Navbar from './Component/Navbar';
-import Toggle from './Component/Toggle';
+import Navbar from './component/Navbar';
+import Toggle from './component/Toggle';
+import Projects from './component/Projects';
+import Showcase from './component/Showcase';
+import Persona from './component/Persona';
+import About from './component/About';
 
 
 const App= () =>  {
@@ -14,16 +17,18 @@ const App= () =>  {
       <Navbar/>
       <Toggle setActiveSection={setActiveSection} />
 
+      
       {activeSection === "work" ? (
         <section className="hero">
           <div className="highlighted-project"></div>
-        <Navbar/>
+          <Showcase/>
+          <Projects/>
         </section>
       ) : (
         <section className="info">
-          
-          <h2>About Me</h2>
-          <p>Hi, I'm Balaji P, a UI/UX Designer and Frontend Developer...</p>
+          <Persona/>
+
+          <About/>
         </section>
       )}
     </div>
