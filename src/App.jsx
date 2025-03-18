@@ -1,37 +1,22 @@
-import React, { useState } from 'react';
-import './App.css';
-import Header from './Header';
-import IntroVideo from './Introvideo';
-import ContactCard from './ContactCard';
-import Skills from './Skills';
-import Projects from './Projects'; 
+import React from "react";
+import "./Portfolio.scss";
+import Navbar from "./components/Navbar";
+import Toggle from "./components/Toggle";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
-function App() {
-    const [isContactCardVisible, setContactCardVisible] = useState(false);
-    const [isSkillsVisible, setSkillsVisible] = useState(false);
-    const [isProjectsVisible, setProjectsVisible] = useState(false);
+const Portfolio = () => {
+  return (
+    <div className="portfolio">
+      <Navbar />
+      <Toggle />
+      <section className="hero">
+        <div className="highlighted-project"></div>
+      </section>
+      <Projects />
+      <Footer />
+    </div>
+  );
+};
 
-    const toggleContactCard = () => {
-        setContactCardVisible(!isContactCardVisible);
-    };
-
-    const toggleSkillsVisibility = () => {
-        setSkillsVisible(!isSkillsVisible);
-    };
-
-    const toggleProjectsVisibility = () => {
-        setProjectsVisible(!isProjectsVisible);
-    };
-
-    return (
-        <div className="App">
-            <Header onSkillsClick={toggleSkillsVisibility} onContactClick={toggleContactCard} onProjectsClick={toggleProjectsVisibility} />
-            <IntroVideo />
-            <Skills isVisible={isSkillsVisible} onClose={toggleSkillsVisibility} />
-            <Projects isVisible={isProjectsVisible} onClose={toggleProjectsVisibility} />
-            <ContactCard isVisible={isContactCardVisible} onClose={toggleContactCard} />
-        </div>
-    );
-}
-
-export default App;
+export default Portfolio;
