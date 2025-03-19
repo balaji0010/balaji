@@ -19,7 +19,7 @@ const About = () => {
           <h3>💼 Experience</h3>
           <ul>
             <li><strong>Software Engineer - InstaSafe</strong> (Jan 25 - Present)</li>
-            <li><strong>UI/UX Designer - InstaSafe(Internship)</strong> (Aug 24 -Dec24 )</li>
+            <li><strong>UI/UX Designer - InstaSafe(Internship)</strong> (Aug 24 -Dec 24 )</li>
           </ul>
         </div>
 
