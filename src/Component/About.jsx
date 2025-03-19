@@ -9,7 +9,7 @@ const About = () => {
         <div className="about-card">
           <h3>🎓 Education</h3>
           <ul>
-            <li><strong>B.Tech in Computer Science</strong> - DHANALAKSHMI SRINIVASAN ENGINEERING COLLEGE (2020 - 2024)</li>
+            <li><strong>B.E in Computer Science</strong> - DHANALAKSHMI SRINIVASAN ENGINEERING COLLEGE (2020 - 2024)</li>
             <li><strong>Higher Secondary</strong> - SATHYA SAAI MATRIC HR SEC SCHOOL(2019- 2020)</li>
           </ul>
         </div>
@@ -18,8 +18,8 @@ const About = () => {
         <div className="about-card">
           <h3>💼 Experience</h3>
           <ul>
-            <li><strong>Software Engineer - InstaSafe</strong> (2025 - Present)</li>
-            <li><strong>Frontend Developer - Internship</strong> (2024)</li>
+            <li><strong>Software Engineer - InstaSafe</strong> (Jan 25 - Present)</li>
+            <li><strong>UI/UX Designer - InstaSafe(Internship)</strong> (Aug 24 -Dec24 )</li>
           </ul>
         </div>
 
