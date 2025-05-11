@@ -14,5 +14,4 @@ const Persona = () => {
   )
 }
 
-export default Persona
-
+export default Persona;

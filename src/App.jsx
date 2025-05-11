@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import './App.css';
-import Navbar from './component/Navbar';
-import Toggle from './component/Toggle';
-import Projects from './component/Projects';
-import Showcase from './component/Showcase';
-import Persona from './component/Persona';
-import About from './component/About';
+import Navbar from './Component/Navbar';
+import Toggle from './Component/Toggle';
+import Projects from './Component/Projects';
+import Showcase from './Component/Showcase';
+import Persona from './Component/Persona';
+import About from './Component/About';
 
 
 const App= () =>  {
