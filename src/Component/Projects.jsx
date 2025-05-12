@@ -16,14 +16,14 @@ const projectData = [
     github: "https://github.com/your-audi-project",
     linkedin: "https://linkedin.com/in/yourprofile"
   },
-  { id: 2, images: ["./Whether.png"], image: "./Whether.png", title: "Google Whether App " },
-  { id: 3, images: ["./Zebronics.png"], image: ["./Zebronics.png"],title: "Zebronics Product Redesign" },
-  { id: 4, images: ["./PUBG.png"],image: ["./PUBG.png"], title: "Pubg Army" },
-  { id: 5, images: ["./eco.png"],image: ["./eco.png"], title: "Minimal Ecom Website" },
-  { id: 6, images: ["./Vedit.png"],image: ["./Vedit.png"], title: "GlassMorphism Portfolio Design" },
-  { id: 7, images: ["./BB.png"],image: ["./BB.png"], title: "Flight Ticket Booking" },
-  { id: 8, images: ["./Asus1.png"],image: ["./Asus1.png"], title: "Asus ROG " },
-  { id: 9, images: ["./net.png"],image: ["./net.png"], title: "Netflix Redesign" },
+  { id: 2, images: ["./Whether.png", "./Zebronics.png"], image: ["./Whether.png", ], title: "Google Whether App " },
+  { id: 3, images: ["./Zebronics.png", "./PUBG.png"], image: ["./Zebronics.png"],title: "Zebronics Product Redesign" },
+  { id: 4, images: ["./PUBG.png", "./eco.png"],image: ["./PUBG.png"], title: "Pubg Army" },
+  { id: 5, images: ["./eco.png", "./BB.png"],image: ["./eco.png"], title: "Minimal Ecom Website" },
+  { id: 6, images: ["./Vedit.png","./Asus1.png"],image: ["./Vedit.png"], title: "GlassMorphism Portfolio Design" },
+  { id: 7, images: ["./BB.png","./net.png"],image: ["./BB.png"], title: "Flight Ticket Booking" },
+  { id: 8, images: ["./Asus1.png","./net.png"],image: ["./Asus1.png"], title: "Asus ROG " },
+  { id: 9, images: ["./net.png","./PUBG.png"],image: ["./net.png"], title: "Netflix Redesign" },
 
 ];
 
