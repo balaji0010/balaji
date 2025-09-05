@@ -5,7 +5,7 @@ const Showcase = () => {
   return (
     <section className='pro-card-container'>
     <div className='pro-card'>
-      <img src="./Linkedin_banner.png" alt=""  className='pro-image'/>
+      <img src="./Linkedin_Banner.png" alt=""  className='pro-image'/>
     </div>
     </section>  
   )
