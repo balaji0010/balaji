@@ -168,6 +168,13 @@ html {
     padding: 8px 0;
 }
 
+.button-container {
+    align-items: stretch;
+    text-align: -webkit-right;
+}
+
+
+
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -189,12 +196,13 @@ html {
     border-radius: 10px;
     overflow-y: auto;
     position: relative;
+        scrollbar-width: thin;
   }
   
   .back-button {
-    background: #f1f1f1;
+    background: none;
     border: none;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     padding: 5px 15px;
     cursor: pointer;
     border-radius: 50%;
@@ -205,10 +213,12 @@ html {
     gap: 10px;
     overflow-x: auto;
     margin-top: 15px;
+        scroll-behavior: smooth;
+    scrollbar-width: none;
   }
   
   .image-container img {
-    max-width: 300px;
+    max-width: 650px;
     border-radius: 5px;
   }
   
@@ -220,7 +230,7 @@ html {
     margin-right: 15px;
     text-decoration: none;
     color: #333;
-    background: #eee;
+    /* background: #eee; */
     padding: 8px 12px;
     border-radius: 5px;
   }

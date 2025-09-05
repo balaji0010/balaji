@@ -10,11 +10,11 @@ const projectData = [
     id: 1,
     title: "AUDI Car Website",
     image: "./AUDI.png",
-    images: ["./AUDI.png"],
+    images: ["./AUDI.png","/audi/audi1.png","/audi/audi2.png","/audi/bala.png","/audi/bala1.png","/audi/bala3.png",],
     description: "A redesign of the AUDI landing page featuring sleek animations and UI.",
-    behance: "https://www.behance.net/your-audi-project",
-    github: "https://github.com/your-audi-project",
-    linkedin: "https://linkedin.com/in/yourprofile"
+    // behance: "https://www.behance.net/your-audi-project",
+    // github: "https://github.com/your-audi-project",
+    // linkedin: "https://linkedin.com/in/yourprofile"
   },
   { id: 2, images: ["./Whether.png", "./Zebronics.png"], image: ["./Whether.png", ], title: "Google Whether App " },
   { id: 3, images: ["./Zebronics.png", "./PUBG.png"], image: ["./Zebronics.png"],title: "Zebronics Product Redesign" },

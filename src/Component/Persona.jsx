@@ -5,7 +5,7 @@ const Persona = () => {
   return (
     <section className='pro-card-container'>
     <div className='pro-card'>
-      <img src="./vin.jpg" alt=""  className='pro-image'/>
+      <img src="./balasid.jpg" alt=""  className='pro-image'/>
     </div>
     <h2>About Me</h2>
           <p>Hi, I'm Balaji P, a UI/UX Designer and Frontend Developer..</p>
