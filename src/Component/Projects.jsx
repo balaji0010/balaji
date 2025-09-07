@@ -21,9 +21,10 @@ const projectData = [
   { id: 4, images: ["./PUBG.png", "/pub/pubsks.png","/pub/pubm16a4.png","/pub/pubm416.png"],image: ["./PUBG.png"], title: "Pubg Army" },
   { id: 5, images: ["./eco.png", "/ecom/eco1.png","/ecom/eco2.png"],image: ["./eco.png"], title: "Minimal Ecom Website" },
   { id: 6, images: ["./chik.png","/chik/chik1.png","/chik/chik2.png","/chik/chik3.png"],image: ["./chik.png"], title: "Chicken Platter" },
-  { id: 7, images: ["./BB.png","./net.png"],image: ["./BB.png"], title: "Flight Ticket Booking" },
-  { id: 8, images: ["./Asus1.png","./net.png"],image: ["./Asus1.png"], title: "Asus ROG " },
-  { id: 9, images: ["./net.png","./PUBG.png"],image: ["./net.png"], title: "Netflix Redesign" },
+  { id: 7, images: ["./BB.png","./bb1.png"],image: ["./BB.png"], title: "Flight Ticket Booking" },
+  { id: 8, images: ["./Asus1.png","/asus/Asus2.png","asus/Asus21.png","asus/Asus3.png"],image: ["./Asus1.png"], title: "Asus ROG " },
+  { id: 9, images: ["./net.png","./net2.png"],image: ["./net.png"], title: "Netflix Redesign" },
+  { id: 10, images: ["./NEWS.png","news2.png",],image: ["./NEWS.png"], title: "New Feed Application" },
 
 ];
 
