@@ -1,4 +1,5 @@
-import React from "react";
+
+import React, { useState } from "react";
 import './component.css';
 
 const Photography = () => {
@@ -14,24 +15,54 @@ const Photography = () => {
     { id: 9, image: "/photos/door.jpg"},
     { id: 10, image: "/photos/win.jpg"},
     { id: 8, image: "/photos/agepoo.jpg"},
-    { id: 9, image: "/photos/me2.jpg"},
-    { id: 10, image: "/photos/pattern.jpg"},
-    { id: 11, image: "/photos/running.jpg"},
-    { id: 12, image: "/photos/gate.jpg"},
-    { id: 13, image: "/photos/pattern.jpg"},
+    { id: 9, image: "/photos/pattern.jpg"},
+    { id: 10, image: "/photos/running.jpg"},
+    { id: 11, image: "/photos/gate.jpg"},
+    { id: 12, image: "/photos/greenor.jpg"},
+    { id: 13, image: "/photos/parr.jpg"},
+    { id: 14, image: "/photos/parr2.jpg"},
+    { id: 15, image: "/photos/parr3.jpg"},
   ];
+ const [selectedPhoto, setSelectedPhoto] = useState(null);
+
+  const openModal = (photo) => {
+    setSelectedPhoto(photo);
+  };
+
+  const closeModal = () => {
+    setSelectedPhoto(null);
+  };
 
   return (
     <section className="photography-section">
       <h2 className="photo-heading">Photography</h2>
+
       <div className="photo-grid">
         {photos.map((photo) => (
-          <div key={photo.id} className="photo-card">
-            <img src={photo.image} alt={photo.title} className="photo-img" />
-            <p className="photo-title">{photo.title}</p>
+          <div
+            key={photo.id}
+            className="photo-card"
+            onClick={() => openModal(photo)}
+          >
+            <img src={photo.image} alt="" className="photo-img" />
           </div>
         ))}
       </div>
+
+      {/* Modal */}
+      {selectedPhoto && (
+        <div className="photo-modal" onClick={closeModal}>
+          <div
+            className="photo-modal-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img src={selectedPhoto.image} alt="" />
+            <button className="close-btn" onClick={closeModal}>
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
