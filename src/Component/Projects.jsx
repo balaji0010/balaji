@@ -18,7 +18,7 @@ const projectData = [
   },
   { id: 2, images: ["./Whether.png","/whether/whether2.png"], image: ["./Whether.png", ], title: "Google Whether App " },
   { id: 3, images: ["./Zebronics.png", "/zeb/Neumorphism.png","/zeb/zeb2.png"], image: ["./Zebronics.png"],title: "Zebronics Product Redesign" },
-  { id: 4, images: ["./PUBG.png", "/pub/pubsks.png","/pub/pubm16a4.png","/pub/pubm416.png"],image: ["./PUBG.png"], title: "Pubg Army" },
+  { id: 4, images: ["./pubgg.png", "/pub/pubsks.png","/pub/pubm16a4.png","/pub/pubm416.png"],image: ["./pubgg.png"], title: "Pubg Army" },
   { id: 5, images: ["./eco.png", "/ecom/eco1.png","/ecom/eco2.png"],image: ["./eco.png"], title: "Minimal Ecom Website" },
   { id: 6, images: ["./chik.png","/chik/chik1.png","/chik/chik2.png","/chik/chik3.png"],image: ["./chik.png"], title: "Chicken Platter" },
   { id: 7, images: ["./BB.png","./bb1.png"],image: ["./BB.png"], title: "Flight Ticket Booking" },
