@@ -466,6 +466,12 @@ html {
     padding: 8px 18px;
     font-size: 0.9rem;
   }
+    .project-image{
+        height: 55vh;
+  }
+  .image-container img{
+    max-width: 400px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -525,5 +531,11 @@ html {
   .work-tabs button {
     max-width: 280px;
     font-size: 0.8rem;
+  }
+  .project-image{
+    height: 40vh;
+  }
+  .image-container img{
+    max-width: 380px;
   }
 }
